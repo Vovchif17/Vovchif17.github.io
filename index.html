@@ -1,46 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Test Page: Don't Panic</title>
     <meta charset="utf-8">
     <style>
-        /*html {*/
-        /*    font-size: 24px;*/
-        /*}*/
         /* GLOBAL STYLES */
-        body {
-            height: 800px;
+        html,body {
+            margin: 0;
+            padding: 0;
+            /*height: 800px;*/
         }
-
+        h1{
+            font-size: 7vw;
+            margin-top: 0;
+        }
         a {
             /*background-color: rgba(14,65,32,0.8);*/
             color: #ff0000;
         }
-
         h2 {
             font-size: 30px;
         }
-
-        /*div {*/
-        /*    border: 1px solid green;*/
-        /*}*/
-
+        /*HERO STYLE*/
+        .full-hero{
+            background-color: #c7dbfc;
+            height: 50vh;
+            width: 75vw;
+        }
         /* SOCIAL STYLES */
         .social-link {
             background-color: rgba(150, 150, 150, 0.2);
             color: blue;
         }
-
         a {
             color: rgb(221, 160, 221);
         }
-
         /* BIO STYLES */
         .bio-wrapper {
             font-size: 24px;
             /*width: 500px;*/
         }
-
         .bio-box {
             /*font-size: 150%;*/
             /*margin: 10%;*/
@@ -55,16 +54,14 @@
         .bio-copy{
             font-size: 1em;
         }
-
         .bio-copy a {
             /*font-size: 150%;*/
             color: #0f0;
         }
-
-
     </style>
 </head>
 <body>
+<div class="full-hero hero-home">
 <!--  <div style="border: 1px solid black; width: 50%; height: 100%">I am a percent test </div>-->
 <h1>I'm an h1</h1>
 <ul>
@@ -78,12 +75,13 @@
         <a class="social-link" href="https://example.com/">Link</a>
     </li>
 </ul>
+</div>
 <h2>I'm an h2</h2>
 <div class="bio-wrapper">
 <div class="bio-box" >
     <h3>Michael Hartl</h3>
     <a href="https://twitter.com/mhartl" class="social-link">here</a>
-    <div class="bio-copy; ">
+    <div class="bio-copy">
         <p>
             Known for his dazzling charm, rapier wit, and unrivaled humility,
             Michael is the creator of the
