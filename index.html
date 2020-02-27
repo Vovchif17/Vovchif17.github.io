@@ -6,35 +6,56 @@
     <style>
       
       /* GLOBAL STYLES */
+      body{
+        height: 800px;
+      }
       a{
-        color: red;
+        /*background-color: rgba(14,65,32,0.8);*/
+        color: #ff0000;
+      }
+      h2{
+        font-size: 30px;
+      }
+      div {
+      border: 1px solid green;
       }
 
       /* SOCIAL STYLES */
       .social-link{
+        background-color: rgba(150, 150, 150, 0.2);
         color: blue;
       }
-      
+      a{
+        color: rgb(221,160,221);
+      }
       /* BIO STYLES */
-      .bio-box{ 
-        border: 1px solid black;        
+      .bio-wrapper{
+        /*width: 500px;*/
+      }
+      .bio-box{
+        border: 1px solid black;  
+        width: 50% ;
       }
       .bio-copy a{
-        color: green;
+        color: #0f0;
+      }
+      div.bio-box{
+        border: 1px solid green;
       }
    </style>
   </head>
   <body>
-    <<h1>I'm an h1</h1>
+<!--  <div style="border: 1px solid black; width: 50%; height: 100%">I am a percent test </div>-->
+    <h1>I'm an h1</h1>
     <ul>
       <li>
-        <a href="https://example.com/">Link</a>
+        <a class="social-link" href="https://example.com/">Link</a>
       </li>
       <li>
-        <a href="https://example.com/">Link</a>
+        <a class="social-link" href="https://example.com/">Link</a>
       </li>
       <li>
-        <a href="https://example.com/">Link</a>
+        <a class="social-link" href="https://example.com/">Link</a>
       </li>
     </ul>
     <h2>I'm an h2</h2>
@@ -87,5 +108,6 @@
         The Future
       </p>
     </div>
+<!--    </div>-->
   </body>
 </html>
