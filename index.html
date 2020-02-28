@@ -31,25 +31,36 @@
         /* SOCIAL STYLES */
         .social-link {
             background-color: rgba(150, 150, 150, 0.2);
-            color: blue;
+            border-radius: 99px;
+            box-sizing: border-box;
+            color: #fff;
             display: inline-block;
-            width: 36px;
-            height: 36px;
+            font-family: Helvetica,arial,sans;
+            font-size: 1rem;
+            font-weight: bold;
+            width: 2.5em;
+            line-height: 1;
+            padding-top: 0.85em;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            height: 2.5em;
         }
 
         .social-list{
-           list-style: none;
+            list-style: none;
             padding: 0;
             text-align: center;
         }
-        .social-list > li{
+        .social-list > li {
             display: inline-block;
+            margin: 0 0.5em;
         }
         /* BIO STYLES */
         .bio-wrapper {
             /*background-color: #c0e0c3;*/
             font-size: 24px;
-            margin:auto;
+            margin:0 auto 100px;
             max-width: 960px;
             /*height: 300px;*/
             /*width: 500px;*/
@@ -69,23 +80,31 @@
             /*font-size: 150%;*/
             /*margin: 10%;*/
             border: 1px solid black;
+            box-sizing: border-box;
+            /*border-color:black black red ;*/
+            /*border-width: 1px 10px 20px 5px;*/
+            /*border-style: solid solid dotted dashed;*/
+            /*border-color: black green #ff0000 #c739de;*/
             font-size: 1rem;
             /*margin: 10% 3% 10% 3%;*/
             margin: 40px 1% 0;
-            padding: 2%;
+         /*   padding: 2%;*/
             width: 23%;
-            /*padding: 20px;*/
+            padding: 2%;
             float: left;
             box-sizing: border-box;
         }
         /*.bio-box > a{*/
         /*    color: #c68bf9;*/
         /*}*/
-
+        .bio-box .social-link{
+            margin: auto;
+        }
         .bio-box h3 {
             color: #fff;
             font-size: 1.5em;
             margin: -40px 0 1em;
+            /*padding: 50px;*/
             text-align: center;
         }
         .bio-box img{
@@ -94,11 +113,14 @@
 
         .bio-copy {
             font-size: 1em;
+            line-height: 1.5;
+            /*padding: 20px;*/
         }
 
         .bio-copy a {
             /*font-size: 150%;*/
             color: #0f0;
+            padding: 20px;
         }
 
         .test-box {
@@ -127,13 +149,13 @@
     <h1>I'm an h1</h1>
     <ul class="social-list">
         <li>
-            <a class="social-link" href="https://example.com/" >Link</a>
+            <a class="social-link" href="https://example.com/" >Fb</a>
         </li>
         <li>
-            <a class="social-link" href="https://example.com/">Link</a>
+            <a class="social-link" href="https://example.com/">Tw</a>
         </li>
         <li>
-            <a class="social-link" href="https://example.com/">Link</a>
+            <a class="social-link" href="https://example.com/">Gh</a>
         </li>
     </ul>
 </div>
