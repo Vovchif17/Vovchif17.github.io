@@ -14,25 +14,48 @@ h1 {
 h2 {
     font-size: 30px;
 }
-
+h2 + p {
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 1em auto 0;
+    max-width: 70%;
+    text-align: center;
+}
 /*HERO STYLE*/
 .full-hero {
     background-color: #c7dbfc;
     height: 50vh;
     /*width: 75vw;*/
 }
+.full-hero:hover,
+.full-hero:active{
+    background: coral;
+}
 
 /*HEADER STYLE*/
+.header {
+    background-color: #000;
+    color: #fff;
+    /*height: 300px;*/
+    /*left: 200px;*/
+    /*position: relative;*/
+    /*width: 100%;*/
+}
 .header-nav{
     float: right;
     padding: 5.5vh 60px 0 0;
+    position: center;
 }
 .header-nav > li{
     display:inline-block;
     margin-left: 1em;
 }
+.header-nav > li ~ li {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 1em;
+}
 .header-nav a{
-    color: #000;
+    color: #fff;
     font-size: 0.8rem;
     font-weight: bold;
     text-decoration: none;
@@ -44,13 +67,34 @@ h2 {
 .header-nav >li:first-child a:hover{
     color: black;
 }
+/*.header-nav li:last-child a          {*/
+/*    color: #ed6e2f;*/
+/*}*/
+/*.header-nav li:last-child  a:hover   {*/
+/*    color: #000;*/
+/*}*/
 .header-nav a:hover,
 .header-nav a:active{
-    color: #edea1e;
+    color: #fff;
 }
-.header_logo:hover,
-.header_logo:active{
-    opacity: 0.5;
+.header-logo{
+    /*bottom: -50px;*/
+    background-color:#000 ;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    height: 10vh;
+    padding: 10px;
+    /*margin: -55px 0 0 -55px;*/
+    width: 10vh;
+    text-align: center;
+}
+.header-logo img {
+    height: 100%;
+}
+.header-logo:hover,
+.header-logo:active{
+    background-color:coral ;
 }
 /* SOCIAL STYLES */
 .social-link {
@@ -70,7 +114,11 @@ h2 {
     vertical-align: middle;
     height: 2.5em;
 }
-
+.social-link:hover,
+.social-link:active
+{
+    background: lime;
+}
 .social-list{
     list-style: none;
     padding: 0;
