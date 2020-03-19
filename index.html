@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/main.css">
     <title>Test Page: Don't Panic</title>
     <meta charset="utf-8">
     <style>
@@ -25,9 +26,39 @@
         .full-hero {
             background-color: #c7dbfc;
             height: 50vh;
-            width: 75vw;
+            /*width: 75vw;*/
         }
 
+        /*HEADER STYLE*/
+        .header-nav{
+            float: right;
+            padding: 5.5vh 60px 0 0;
+        }
+        .header-nav > li{
+            display:inline-block;
+            margin-left: 1em;
+        }
+        .header-nav a{
+            color: #000;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .header-nav >li:first-child a{
+            color: red;
+        }
+        .header-nav >li:first-child a:hover{
+            color: black;
+        }
+        .header-nav a:hover,
+        .header-nav a:active{
+            color: #edea1e;
+        }
+        .header_logo:hover,
+        .header_logo:active{
+            opacity: 0.5;
+        }
         /* SOCIAL STYLES */
         .social-link {
             background-color: rgba(150, 150, 150, 0.2);
@@ -143,8 +174,20 @@
             /*margin-top: 100px;*/
         }
     </style>
+
 </head>
 <body>
+<header class="header">
+    <nav>
+        <ul class="header-nav">
+            <li><a href="/">Home</a> </li>
+            <li><a href="#">Home</a> </li>
+            <li><a href="#">Home</a> </li>
+            <li><a href="#">Home</a> </li>
+        </ul>
+    </nav>
+    <a href="/" class="header_logo">Logo</a>
+</header>
 <div class="full-hero hero-home">
     <!--  <div style="border: 1px solid black; width: 50%; height: 100%">I am a percent test </div>-->
     <h1>I'm an h1</h1>
@@ -160,6 +203,14 @@
         </li>
     </ul>
 </div>
+<h2>THE FOUNDERS</h2>
+<p>
+    Learn Enough to Be Dangerous was founded in 2015 by Michael Hartl, Lee Donahoe,
+    and Nick Merwin. We believe that the kind of technical sophistication taught by
+    the Learn Enough tutorials can benefit at least a billion people, and probably
+    more.
+</p>
+<p>Test paragraph</p>
 <h2>I'm an h2</h2>
 
 <div class="test-box">
