@@ -25,6 +25,7 @@ h2 + p {
 .full-hero {
     background-color: #c7dbfc;
     height: 50vh;
+    /*position: relative;*/
     /*width: 75vw;*/
 }
 .full-hero:hover,
