@@ -1,5 +1,9 @@
 /* GLOBAL STYLES */
-html, body {
+html{
+    box-shadow: 0 0 10px 10px #000 inset;
+    padding: 0 30px;
+}
+body {
     /*font-size: 62.5%;*/
     margin: 0;
     padding: 0;
@@ -10,7 +14,6 @@ h1 {
     font-size: 7vw;
     margin-top: 0;
 }
-
 h2 {
     font-size: 30px;
 }
@@ -24,6 +27,7 @@ h2 + p {
 /*HERO STYLE*/
 .full-hero {
     background-color: #c7dbfc;
+    /*box-shadow: 0 0 10px 10px rgba(0,0,0,0.9) inset;*/
     height: 50vh;
     /*position: relative;*/
     /*width: 75vw;*/
@@ -41,6 +45,9 @@ h2 + p {
     /*left: 200px;*/
     /*position: relative;*/
     /*width: 100%;*/
+    position: fixed;
+    width: 100%;
+    z-index: 20;
 }
 .header-nav{
     float: right;
@@ -85,6 +92,7 @@ h2 + p {
     display: block;
     position: relative;
     height: 10vh;
+    left: -30px;
     padding: 10px;
     /*margin: -55px 0 0 -55px;*/
     width: 10vh;
@@ -92,6 +100,7 @@ h2 + p {
 }
 .header-logo img {
     height: 100%;
+    width: 4.3vh;
 }
 .header-logo:hover,
 .header-logo:active{
