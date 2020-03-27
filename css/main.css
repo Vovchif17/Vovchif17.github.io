@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-    font-size: 7vw;
+    /*font-size: 7vw;*/
     margin-top: 0;
 }
 h2 {
@@ -28,9 +28,36 @@ h2 + p {
 .full-hero {
     background-color: #c7dbfc;
     /*box-shadow: 0 0 10px 10px rgba(0,0,0,0.9) inset;*/
-    height: 50vh;
+    box-sizing: border-box;
+    height: 100vh;
+    background-size: cover;
     /*position: relative;*/
     /*width: 75vw;*/
+    padding-top: 10vh;
+}
+.hero-home{
+    background-image: url("../images/shark.jpg");
+    background-position: center top;
+}
+.hero-content h1{
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 0.25em;
+}
+.hero-content .social-link{
+    background-color: rgba(255,255,255,0.5);
+    color: #556c83;
+}
+.hero-content .social-link:hover{
+    background-color: #000;
+    color: #ffffff;
+}
+.hero-content{
+    color: white;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 .full-hero:hover,
 .full-hero:active{
