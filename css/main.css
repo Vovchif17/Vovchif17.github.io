@@ -36,8 +36,7 @@ h2 + p {
     text-align: center;
 }
 /*COLUMN STYLE*/
-.col-three{
-    display: flex;
+.col-three{    display: flex;
     flex: 1;
 }
 .col{
