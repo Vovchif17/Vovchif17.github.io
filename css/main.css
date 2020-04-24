@@ -57,7 +57,6 @@ h2 + p {
     flex: 0 1 20em;
 }
 /*GALLETY STYLE*/
-
 .gallery-thumbs {
     height: 90vh;
     overflow: scroll;
